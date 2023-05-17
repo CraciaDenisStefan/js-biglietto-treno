@@ -2,9 +2,9 @@ let km_da_fare = parseInt(prompt(`Quanti km deve percorre?`));
 
 let eta = parseInt(prompt(`Quanti anni ha?`));
 
-let prezzo_km = (0.21).toFixed(2) ;
+let prezzo_km = (0.21);
 
-let prezzo = km_da_fare * prezzo_km 
+let prezzo = (km_da_fare * prezzo_km).toFixed(2); 
 
 if(eta <= 18) {
      sconto_20 =  prezzo * 20 / 100 ;
